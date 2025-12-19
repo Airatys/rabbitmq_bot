@@ -6,7 +6,7 @@
   friendly_name => "RabbitMQ metadata store",
   cluster_name => rabbitmq_metadata,
   metrics_labels => #{module => rabbit_khepri,ra_system => coordination},
-  uid => <<"RABBIT4XV8Y3Y9VSC2">>,initial_members => [],
-  log_init_args => #{uid => <<"RABBIT4XV8Y3Y9VSC2">>},
+  uid => <<"RABBITU0E1J2WCG6EL">>,initial_members => [],
+  log_init_args => #{uid => <<"RABBITU0E1J2WCG6EL">>},
   tick_timeout => 1000,broadcast_time => 100,
   install_snap_rpc_timeout => 120000,await_condition_timeout => 30000}.
