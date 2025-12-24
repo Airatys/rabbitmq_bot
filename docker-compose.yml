@@ -1,11 +1,11 @@
 services:
   rabbitmq:
-    image: "rabbitmq:management"  # используем образ с включенным управлением
+    image: "heidiks/rabbitmq-delayed-message-exchange:latest"
     hostname: rabbitmqhost
     restart: always
     ports:
       - "5672:5672"  # порт для AMQP
-      - "15672:15672"  # порт для управляющего интерфейса
+      - "15672:15672"  # порт для управляющего интерфейс
     volumes:
       - ./rabbitmq_data:/var/lib/rabbitmq  # сохраняем данные на диске
     environment:
